@@ -1,0 +1,11 @@
+dependencies {
+    compile project(':ribbon')
+    compile 'com.netflix.evcache:evcache-client:1.0.5'
+    compile "io.reactivex:rxjava:${rx_java_version}"
+    compile 'org.slf4j:slf4j-api:1.6.4'
+    testCompile project(':ribbon-test')
+    testCompile project(path: ':ribbon', configuration: 'test')
+    testCompile 'junit:junit:4.11'
+    testCompile 'org.powermock:powermock-easymock-release-full:1.5.4'
+    testCompile 'org.easymock:easymock:3.2'
+}
